@@ -10,10 +10,10 @@ public class Spawn_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Instantiate trees
+        //Instantiate monsters
         for (int i = 0; i < 3; i++)
         {
-            Instantiate(monsterPrefab, new Vector3(Random.Range(-100f, 100f), 20f, Random.Range(100f, 200f)), Quaternion.identity, this.transform);
+            Instantiate(monsterPrefab, new Vector3(Random.Range(-100f, 100f), 20f, Random.Range(-150f, -50f)), Quaternion.identity, this.transform);
         }
     }
 

@@ -24,7 +24,7 @@ public class StaticObjects_Manager : MonoBehaviour
         }
 
         //Instantiate Pub
-        Instantiate(pubPrefab, new Vector3(0f, 40f, -1000f), Quaternion.identity, this.transform);
+        Instantiate(pubPrefab, new Vector3(Random.Range(-2500f, 3800f), 40f, Random.Range(-5000f, 2800f)), Quaternion.identity, this.transform);
 
     }
 
