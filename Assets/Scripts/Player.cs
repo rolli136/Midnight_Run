@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private float movementSpeed = 10f;
-    private float frontalSpeed = 20f;
+    private float frontalSpeed = 15f;
     //public float sideSpeed = 1f;
     private float rotationSpeed = 0.5f;
     
