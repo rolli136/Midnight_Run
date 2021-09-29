@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     //private float frontalSpeed = 6f;
     //public float sideSpeed = 1f;
     private float rotationSpeed = 20f;
+    private float torque = 0.3f;
 
     //public GameObject wayPoint;
     //private float timer = 0.5f;
@@ -28,24 +29,40 @@ public class Player : MonoBehaviour
     void Update()
     {
         //PlayerMovement();
-        PlayerRotation();
+        //PlayerRotation();
 
     }
 
     private void FixedUpdate()
     {
         //Store user input as a movement vector
-        Vector3 m_Input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        //Vector3 m_Input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        float s_Input = Input.GetAxis("Horizontal");
+        float f_Input = Input.GetAxis("Vertical");
         //store Input as an angle
         //angleVelocity = new Vector3(0, Input.GetAxis("Mouse X"), 0);
         //Debug.Log("Angle: " + angleVelocity);
-        
+
         //Quaternion rotation = Quaternion.Euler(angleVelocity * Time.deltaTime);
 
-        
+        playerRigidbody.AddRelativeForce(transform.forward * f_Input * movementSpeed);
+
+        playerRigidbody.AddRelativeForce(transform.right * s_Input * movementSpeed);
+
+        float turn = Input.GetAxis("Mouse X");
+        playerRigidbody.AddRelativeTorque(Vector3.up * torque * turn);
+
+        //if(Input.GetAxis("Horizontal") > 0)
+        //{
+        //    playerRigidbody.AddRelativeForce(transform.right * movementSpeed);
+        //}
+        //else if(Input.GetAxis("Horizontal") < 0)
+        //{
+        //    playerRigidbody.AddRelativeForce(transform.left * movementSpeed);
+        //}
         //Apply the movement vector to the current position, which is
         //multiplied by deltaTime and speed for a smooth MovePosition
-        playerRigidbody.MovePosition(transform.position + m_Input * Time.deltaTime * movementSpeed);
+        //playerRigidbody.MovePosition(transform.position + m_Input * Time.deltaTime * movementSpeed);
         //playerRigidbody.MoveRotation(playerRigidbody.rotation* rotation);
     }
 

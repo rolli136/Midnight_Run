@@ -15,7 +15,6 @@ public class Spawn_Manager : MonoBehaviour
         {
             Vector3 startingPos = new Vector3(Random.Range(-50f, 50f), 1.5f, Random.Range(-50f, 50f));
             Instantiate(monsterPrefab, startingPos, Quaternion.identity, this.transform);
-            Debug.Log("Starting Position: " + startingPos);
         }
     }
 
