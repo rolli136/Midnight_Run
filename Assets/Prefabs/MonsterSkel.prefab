@@ -31,7 +31,7 @@ Transform:
   m_LocalPosition: {x: 105.66334, y: -0.00000023841858, z: -35.89267}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
-  - {fileID: 6808279801656627919}
+  - {fileID: 959669696234975806}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -96,12 +96,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5628042870645904393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc41606d85e2454db73ae2003328e73, type: 3}
+  m_Script: {fileID: 11500000, guid: ae579b7f61db64054b4cdc6b2b1a0a6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   agent: {fileID: 0}
---- !u!1001 &5004068613076476105
+--- !u!1001 &1610235935950487608
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -110,11 +110,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1948329710155509286, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
       propertyPath: m_Name
-      value: PT_Medieval_Male_NPC_Skeleton_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1948329710155509344, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      value: PT_Medieval_Male_NPC_Skeleton_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1948329710155936262, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
       propertyPath: m_RootOrder
@@ -160,18 +156,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1948329710165024164, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: ee116a9c76d3a0e48bd97c1e76ed6bd3, type: 3}
-    - target: {fileID: 1948329710165024164, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: eb79e3fd0dd669f40a90a984b92a0ccf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
---- !u!4 &6808279801656627919 stripped
+--- !u!4 &959669696234975806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1948329710155936262, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
-  m_PrefabInstance: {fileID: 5004068613076476105}
+  m_PrefabInstance: {fileID: 1610235935950487608}
   m_PrefabAsset: {fileID: 0}
