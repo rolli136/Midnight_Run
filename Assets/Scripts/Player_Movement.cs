@@ -90,7 +90,8 @@ public class Player_Movement : MonoBehaviour
         //Debug.Log("Type: " + other.GetType());
         if (other.CompareTag("Coin"))
         {
-            Destroy(other.gameObject);
+            other.transform.position = new Vector3(Random.Range(-200f, 200f), 10, Random.Range(-200f, 200f));
+            //Destroy(other.gameObject);
             gameManager.updateCoinCount();
         }
         else if (other.CompareTag("Pub"))
