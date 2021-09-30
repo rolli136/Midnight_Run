@@ -87,7 +87,17 @@ public class Player_Movement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        gameManager.LevelCompleted();
+        //Debug.Log("Type: " + other.GetType());
+        if (other.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+            gameManager.updateCoinCount();
+        }
+        else if (other.CompareTag("Pub"))
+        {
+             gameManager.LevelCompleted();
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)

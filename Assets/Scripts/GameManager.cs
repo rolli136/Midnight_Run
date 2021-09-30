@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] private GameObject _textGameOver;
     [SerializeField] private GameObject _textGameCompleted;
+    [SerializeField] private GameObject _coinCounter;
+    private float currentCoins = 0; 
     //private bool gameOver = false;
 
     void Start()
@@ -16,6 +19,7 @@ public class GameManager : MonoBehaviour
         //Disable all displays
         _textGameOver.SetActive(false);
         _textGameCompleted.SetActive(false);
+        _coinCounter.GetComponent<Text>().text = currentCoins.ToString();
     }
 
     // Update is called once per frame
@@ -33,5 +37,11 @@ public class GameManager : MonoBehaviour
     public void LevelCompleted()
     {
         _textGameCompleted.SetActive(true);
+    }
+
+    public void updateCoinCount()
+    {
+        currentCoins += 10; 
+        _coinCounter.GetComponent<Text>().text = currentCoins.ToString();
     }
 }
