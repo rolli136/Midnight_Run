@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7298595221311998973}
   - component: {fileID: 7307477867079437249}
   - component: {fileID: 7253351325194686431}
+  - component: {fileID: 4866775892595570562}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Respawn
@@ -97,3 +98,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 1, z: 0}
   speed: 100
+--- !u!58 &4866775892595570562
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7294169845315475715}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
