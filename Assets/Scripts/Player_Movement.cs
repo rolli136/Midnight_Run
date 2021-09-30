@@ -67,28 +67,6 @@ public class Player_Movement : MonoBehaviour
         mCharacterController.Move(transform.forward * v * speed * Time.deltaTime);
         mCharacterController.Move(transform.right * s * speed * Time.deltaTime);
 
-        if (transform.position.x > 199)
-        {
-            transform.position = new Vector3(199, transform.position.y, transform.position.z);
-            Debug.Log("Pos X: " + transform.position.x);
-        }
-        else if(transform.position.x < -199)
-        {
-            transform.position = new Vector3(-199, transform.position.y, transform.position.z);
-            Debug.Log("Pos X: " + transform.position.x);
-        }
-        
-
-        if (transform.position.z > 199)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 199);
-            Debug.Log("Pos Z: " + transform.position.z);
-        }
-        else if (transform.position.z < -199)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -199);
-            Debug.Log("Pos Z: " + transform.position.z);
-        }
 
         if (mAnimator != null)
         {
