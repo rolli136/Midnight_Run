@@ -5,7 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class Player_Movement : MonoBehaviour
 {
-    [HideInInspector]
+
+    //[HideInInspector]
+    [SerializeField] GameManager gameManager;
+
     public CharacterController mCharacterController;
     public Animator mAnimator;
 
@@ -80,5 +83,15 @@ public class Player_Movement : MonoBehaviour
        
         if (mCharacterController.isGrounded && mVelocity.y < 0)
             mVelocity.y = 0f;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        gameManager.LevelCompleted();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        gameManager.GameOver();
     }
 }
