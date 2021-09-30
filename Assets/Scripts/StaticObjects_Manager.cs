@@ -14,17 +14,17 @@ public class StaticObjects_Manager : MonoBehaviour
         //Instantiate trees
         for (int i = 0; i < 20; i++)
         {
-            Instantiate(treePrefab, new Vector3(Random.Range(-170f, 170f), 0f, Random.Range(-170f, 170f)), Quaternion.identity, this.transform);
+            Instantiate(treePrefab, new Vector3(Random.Range(-170f, 170f), 10f, Random.Range(-170f, 170f)), Quaternion.identity, this.transform);
         }
 
         //Instantiate obstacles
         for (int i = 0; i < 20; i++)
         {
-            Instantiate(obstaclePrefab, new Vector3(Random.Range(-170f, 170f), 0f, Random.Range(-170f, 170f)), Quaternion.identity, this.transform);
+            Instantiate(obstaclePrefab, new Vector3(Random.Range(-170f, 170f), 5f, Random.Range(-170f, 170f)), Quaternion.identity, this.transform);
         }
 
         //Instantiate Pub
-        Instantiate(pubPrefab, new Vector3(Random.Range(-170f, 170f), 2f, Random.Range(-170f, 170f)), Quaternion.identity, this.transform);
+        Instantiate(pubPrefab, new Vector3(Random.Range(-170f, 170f), 13f, Random.Range(-170f, 170f)), Quaternion.identity, this.transform);
 
     }
 

@@ -17,6 +17,7 @@ public class Player_Movement : MonoBehaviour
     public bool mFollowCameraForward = false;
     public float mTurnRate = 20.0f;
     private Vector3 mVelocity = new Vector3(0.0f, 0.0f, 0.0f);
+    
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +66,8 @@ public class Player_Movement : MonoBehaviour
         transform.Rotate(0.0f, h * mRotationSpeed * Time.deltaTime, 0.0f);
         mCharacterController.Move(transform.forward * v * speed * Time.deltaTime);
         mCharacterController.Move(transform.right * s * speed * Time.deltaTime);
+
+
         if (mAnimator != null)
         {
             mAnimator.SetFloat("PosZ", v * speed / mRunSpeed); 
