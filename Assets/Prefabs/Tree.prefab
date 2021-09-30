@@ -25,6 +25,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 1646857378884585973, guid: 810fcd412af7b0c45a7502e4e96f443b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3713474895949912771, guid: 810fcd412af7b0c45a7502e4e96f443b, type: 3}
       propertyPath: m_RootOrder
       value: 0

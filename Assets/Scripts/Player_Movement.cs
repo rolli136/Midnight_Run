@@ -14,8 +14,6 @@ public class Player_Movement : MonoBehaviour
     public float mRotationSpeed = 50.0f;
     public float mGravity = -30.0f;
 
-    [Tooltip("Only useful with Follow and Independent " +
-      "Rotation - third - person camera control")]
     public bool mFollowCameraForward = false;
     public float mTurnRate = 20.0f;
     private Vector3 mVelocity = new Vector3(0.0f, 0.0f, 0.0f);
