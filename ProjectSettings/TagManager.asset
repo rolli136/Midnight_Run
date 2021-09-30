@@ -7,8 +7,6 @@ TagManager:
   - Monster
   - Obstacle
   - Pub
-  tags:
-  - PowerUp
   - Skeleton
   layers:
   - Default
@@ -17,7 +15,7 @@ TagManager:
   - Grass
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
