@@ -112,6 +112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Medieval_Male_NPC_Skeleton_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1948329710155509344, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1948329710155936262, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -156,6 +160,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1948329710165024164, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: ee116a9c76d3a0e48bd97c1e76ed6bd3, type: 3}
     - target: {fileID: 1948329710165024164, guid: 38283d0f2f9588c4a90e9a27a86fdbdc, type: 3}
       propertyPath: m_Controller
       value: 
